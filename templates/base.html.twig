@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}
+				{{title}}
+			{% endblock %}
+		</title>
+
+		{# Links #}
+		<link
+		rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>📜</text></svg>">
+
+		{# OWL-CAROUSEL LINKS #}
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+
+	</head>
+
+	<body>
+		{% include 'layouts/partials/_navbar.html.twig' %}
+		{% include 'layouts/partials/_banner.html.twig' %}
+		{% include 'layouts/partials/_carousel.html.twig' %}
+
+		<main
+			class="container main_base border">
+			{#  #}
+			{% block body %}{% endblock %}
+		</main>
+
+		{% include 'layouts/partials/_footer.html.twig' %}
+
+
+		<!-- JQUERY -->
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+		<!-- OWL-CAROUSEL JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+
+	</body>
+</html>

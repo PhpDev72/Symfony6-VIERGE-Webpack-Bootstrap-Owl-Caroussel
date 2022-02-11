@@ -1,0 +1,28 @@
+/*---------------------------------------
+   Navbar section              
+-----------------------------------------*/
+
+
+.navbar{
+
+    background-color: var(--navColor) !important;
+}
+
+.nav-link{
+
+    color: #555 !important;
+    letter-spacing: 1.5px;
+    margin: 0 25px;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+
+    color: #bfba55 !important;
+}
+
+.nav-link.active{
+
+    color: #bfba55 !important;
+}
+

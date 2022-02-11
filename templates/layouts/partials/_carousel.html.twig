@@ -1,0 +1,16 @@
+{# --------------------------------------- 
+   Carousel               
+ ---------------------------------------- #}
+
+<div id="owl-demo" class="owl-carousel owl-theme container">
+
+	{% for i in 1..16 %}
+
+		<div class="item">
+			<h1>{{i}}</h1>
+			{# <img src="{{ asset("build/img/carousel#{i}.jpg") }}" alt=""> #}
+		</div>
+
+	{% endfor %}
+
+</div>

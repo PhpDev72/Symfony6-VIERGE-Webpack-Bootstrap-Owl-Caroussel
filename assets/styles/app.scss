@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/bootstrap";
+@import "shared/_navbar";
+@import "shared/_banner";
+@import "shared/_footer";
+@import "shared/_carousel";
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navColor: #fff;
+    --footColor: #000;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.main_base{
+
+    min-height: 180vh !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    letter-spacing: 1.5px;
+}
